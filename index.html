@@ -19,7 +19,12 @@
             <div class="main-info">
                 <div>
                     <h3 class="city-name"></h3>
-                    <input type="text" placeholder="City name..."><button class="check-weather">Check</button>
+                    <select id="unitSelect" class="unit-select">
+                        <option value="metric">metric</option>
+                        <option value="imperial">imperial</option>
+                    </select>
+                    <input type="text" placeholder="City name...">
+                    <button class="check-weather">Check</button>
                     <p class="warning"></p>
                 </div>
                 <img src="../img/unknown.png" alt="Weather image" class="photo">
@@ -30,11 +35,15 @@
                 <p>Weather:</p>
                 <p>Temperature:</p>
                 <p>Humidity:</p>
+                <p>Pressure:</p>
+                <p>Wind speed:</p>
             </div>
             <div class="weather-info">
                 <p class="weather"></p>
                 <p class="temperature"></p>
                 <p class="humidity"></p>
+                <p class="pressure"></p>
+                <p class="windSpeed"></p>
             </div>
         </div>
     </div>
